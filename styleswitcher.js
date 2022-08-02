@@ -45,7 +45,7 @@ function setActiveStyleSheet(title) {
 	var color_skin = readCookie('color_skin');
 	if(color_skin == 'dark') {
 		jQuery("#css_dark_skin").remove();
-		jQuery("head").append('<link id="css_dark_skin" href="assets/css/layout-dark.css" rel="stylesheet" type="text/css" title="dark" />');
+		jQuery("head").append('<link id="css_dark_skin" href="layout-dark.css" rel="stylesheet" type="text/css" title="dark" />');
 		jQuery("#is_dark").trigger('click');
 		jQuery("a.logo img").attr('src', 'assets/images/logo_dark.png');
 	}
